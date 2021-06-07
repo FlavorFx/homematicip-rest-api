@@ -1167,3 +1167,13 @@ class HotWaterGroup(Group):
     def set_profile_mode(self, profileMode: ProfileMode):
         data = {"groupId": self.id, "profileMode": profileMode}
         return self._restCall("group/heating/setProfileMode", body=json.dumps(data))
+
+class AccessAuthorizationProfileGroup(Group):
+    def __init__(self, connection):
+        super().__init__(connection)
+
+    def from_json(self, js, devices):
+        super().from_json(js, devices)
+
+    def __str__(self):
+            super().__str__()

@@ -161,7 +161,7 @@ class AsyncConnection(BaseConnection):
                 logger.debug("Sending out ping request.")
                 pong_waiter = await self.socket_connection.ping()
                 await asyncio.wait_for(pong_waiter, timeout=self.ping_timeout)
-                logger.debug("Pong received.")
+                logger.debug("Pong received!")
                 await asyncio.sleep(self.ping_loop)
         except CancelledError:
             logger.debug("WS Ping pong task cancelled.")

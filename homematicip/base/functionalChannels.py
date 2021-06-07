@@ -1035,3 +1035,21 @@ class TemperaturDifferenceSensor2Channel(FunctionalChannel):
         self.set_attr_from_dict("temperatureExternalDelta", js)
         self.set_attr_from_dict("temperatureExternalOne", js)
         self.set_attr_from_dict("temperatureExternalTwo", js)
+
+class AccessAuthorizationChannel(FunctionalChannel):
+    """this is the representative of the ACCESS_AUTHORIZATION_CHANNEL channel"""
+
+    def __init__(self, connection):
+        super().__init__(connection)
+
+    def from_json(self, js, groups: Iterable[Group]):
+        super().from_json(js, groups)
+
+class DoorLockChannel(FunctionalChannel):
+    """this is the representative of the DEVICE_OPERATIONLOCK channel"""
+
+    def __init__(self, connection):
+        super().__init__(connection)
+
+    def from_json(self, js, groups: Iterable[Group]):
+        super().from_json(js, groups)

@@ -2112,3 +2112,19 @@ class TemperaturDifferenceSensor2(Device):
             self.set_attr_from_dict("temperatureExternalDelta", c)
             self.set_attr_from_dict("temperatureExternalOne", c)
             self.set_attr_from_dict("temperatureExternalTwo", c)
+
+class DoorLockDrive(Device):
+    """ HmIP-DLD (Door Lock Drive) """
+
+    def __init__(self, connection):
+        super().__init__(connection)
+
+    def from_json(self, js):
+        super().from_json(js)
+        c = get_functional_channel("DOOR_LOCK_CHANNEL", js)
+        if c:
+            pass
+
+        c = get_functional_channel("ACCESS_AUTHORIZATION_PROFILE", js)
+        if c:
+            pass

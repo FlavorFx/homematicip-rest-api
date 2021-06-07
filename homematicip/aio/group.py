@@ -32,6 +32,7 @@ from homematicip.group import (
     SwitchGroupBase,
     SwitchingGroup,
     SwitchingProfileGroup,
+    AccessAuthorizationProfileGroup,
 )
 
 
@@ -271,3 +272,6 @@ class AsyncEnvironmentGroup(EnvironmentGroup, AsyncGroup):
 class AsyncHotWaterGroup(HotWaterGroup, AsyncGroup):
     async def set_profile_mode(self, profileMode: ProfileMode):
         return await self._connection.api_call(*super().set_profile_mode(profileMode))
+
+class AsyncAccessAuthorizationProfileGroup(AccessAuthorizationProfileGroup, AsyncGroup):
+    pass

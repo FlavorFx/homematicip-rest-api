@@ -581,3 +581,6 @@ class AsyncRainSensor(RainSensor, AsyncDevice):
 
 class AsyncTemperaturDifferenceSensor2(TemperaturDifferenceSensor2, AsyncDevice):
     """ HmIP-STE2-PCB (Temperature Difference Sensors - 2x sensors) """
+
+class AsyncDoorLockDrive(DoorLockDrive, AsyncDevice):
+    """ HmIP-DLD (Door Lock) """

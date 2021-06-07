@@ -23,6 +23,7 @@ TYPE_CLASS_MAP = {
     DeviceType.DIN_RAIL_SWITCH: DinRailSwitch,
     DeviceType.DIN_RAIL_SWITCH_4: DinRailSwitch4,
     DeviceType.DIN_RAIL_DIMMER_3: DinRailDimmer3,
+    DeviceType.DOOR_LOCK_DRIVE: DoorLockDrive,
     DeviceType.FLOOR_TERMINAL_BLOCK_10: FloorTerminalBlock10,
     DeviceType.FLOOR_TERMINAL_BLOCK_12: FloorTerminalBlock12,
     DeviceType.FLOOR_TERMINAL_BLOCK_6: FloorTerminalBlock6,
@@ -89,6 +90,7 @@ TYPE_CLASS_MAP = {
 TYPE_GROUP_MAP = {
     GroupType.GROUP: Group,
     GroupType.ALARM_SWITCHING: AlarmSwitchingGroup,
+    GroupType.ACCESS_AUTHORIZATION_PROFILE: AccessAuthorizationProfileGroup,
     GroupType.ENVIRONMENT: EnvironmentGroup,
     GroupType.EXTENDED_LINKED_SHUTTER: ExtendedLinkedShutterGroup,
     GroupType.EXTENDED_LINKED_SWITCHING: ExtendedLinkedSwitchingGroup,
@@ -146,6 +148,7 @@ TYPE_FUNCTIONALHOME_MAP = {
 
 TYPE_FUNCTIONALCHANNEL_MAP = {
     FunctionalChannelType.FUNCTIONAL_CHANNEL: FunctionalChannel,
+    FunctionalChannelType.ACCESS_AUTHORIZATION_CHANNEL: AccessAuthorizationChannel,
     FunctionalChannelType.ACCELERATION_SENSOR_CHANNEL: AccelerationSensorChannel,
     FunctionalChannelType.ACCESS_CONTROLLER_CHANNEL: AccessControllerChannel,
     FunctionalChannelType.ALARM_SIREN_CHANNEL: AlarmSirenChannel,
@@ -160,12 +163,13 @@ TYPE_FUNCTIONALCHANNEL_MAP = {
     FunctionalChannelType.DEVICE_BASE_FLOOR_HEATING: DeviceBaseFloorHeatingChannel,
     FunctionalChannelType.DEVICE_GLOBAL_PUMP_CONTROL: DeviceGlobalPumpControlChannel,
     FunctionalChannelType.DEVICE_INCORRECT_POSITIONED: DeviceIncorrectPositionedChannel,
-    FunctionalChannelType.DEVICE_OPERATIONLOCK: DeviceOperationLockChannel,
+    FunctionalChannelType.DEVICE_OPERATIONLOCK: DeviceOperationLockChannel, 
     FunctionalChannelType.DEVICE_PERMANENT_FULL_RX: DevicePermanentFullRxChannel,
     FunctionalChannelType.DEVICE_RECHARGEABLE_WITH_SABOTAGE: DeviceRechargeableWithSabotage,
     FunctionalChannelType.DEVICE_SABOTAGE: DeviceSabotageChannel,
     FunctionalChannelType.DIMMER_CHANNEL: DimmerChannel,
     FunctionalChannelType.DOOR_CHANNEL: DoorChannel,
+    FunctionalChannelType.DOOR_LOCK_CHANNEL: DoorLockChannel,
     FunctionalChannelType.FLOOR_TERMINAL_BLOCK_CHANNEL: FloorTeminalBlockChannel,
     FunctionalChannelType.FLOOR_TERMINAL_BLOCK_LOCAL_PUMP_CHANNEL: FloorTerminalBlockLocalPumpChannel,
     FunctionalChannelType.FLOOR_TERMINAL_BLOCK_MECHANIC_CHANNEL: FloorTerminalBlockMechanicChannel,
